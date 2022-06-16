@@ -1,0 +1,149 @@
+html,body{
+    height: 100%;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+main{
+    flex:1 1 auto;
+}
+
+header{
+    background-color: #0F6D00;
+}
+
+.container{
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.header_inner{
+    display: flex;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding:0px;
+    margin-left: 20px; 
+    flex-wrap: wrap;
+}
+
+
+li{
+    margin:0px 15px;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+.main_photo_inner{
+    max-height: 480px;
+    height: 480px;
+    background-image: url(../img/eda.png);
+    display: flex;
+    align-items: flex-end;
+}
+
+.main_photo{
+    position: relative;
+}
+
+.left_photo,.right_photo{
+    position: absolute;
+    max-width: 720px;
+    width: 720px;
+    max-height: 480px;
+    height: 480px;
+    z-index: -100;
+    border: 1px solid #000000;
+    filter: blur(3px);
+    top: 0px;
+}
+
+.left_photo{
+    background-image: url(../img/left-part.png);
+    left: 0px;
+}
+
+.right_photo{
+    background-image: url(../img/right-part.png);
+    right: 0px;
+}
+
+
+.on_photo_text{
+    font-family: 'Inter';
+    font-style: normal;
+    color:white;
+}
+
+.on_photo_text h2{
+    font-size: 42px;
+    line-height: 51px;
+    margin:25px 0px;
+    font-weight: 600;
+}
+
+.on_photo_text p{
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+}
+
+.main_text{
+    margin-top: 43px;
+}
+
+.main_text_inner p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+footer{
+    background-color: #670101;
+    margin-top: 125px;
+}
+.footer_inner{
+    height: 100px;
+    max-height: 100px;
+}
+
+.footer_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_inner div{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.design-author{
+    text-align: right;
+}
